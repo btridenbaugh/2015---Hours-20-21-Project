@@ -1,0 +1,171 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Favorite Heroes</title>
+<link media="print, projector" />
+<style type="text/css" media="screen">
+body {
+color: #f0f0f0;
+background-color: #363636;
+font-family: Arial Black;
+font-size: 18pt;
+}
+h1 {
+color: white;
+font-family: Arial Black;
+font-size: 18pt;
+}
+#container {
+position:relative;
+width:600px;
+height:600px;
+align: center;
+}
+#container div {
+position:absolute;
+width:600px;
+height:600px;
+align: center;
+margin-left: 425px;
+}
+#Hero1 {
+background:green;
+}
+#Hero2 {
+background:black;
+display:none;
+}
+#Hero3 {
+background:red;
+display:none;
+}
+#Hero4 {
+background:yellow;
+display:none;
+}
+#Hero5 {
+background: yellow;
+display: none;
+}
+#nav {
+width:250px;
+height: 0px;
+margin-right: 18px;
+margin-top: 15px;
+}
+#nav a {
+text-decoration: none;
+}
+#nav ul {
+list-style: none;
+margin: 3px 0px 0px 0px;
+padding: 0px;
+}
+#nav ul li {
+border: 1px solid #d7ebe9;
+}
+#nav ul li a:link, #nav ul li a:visited {
+font-size: 15pt;
+font-weight: bold;
+display: block;
+padding: 3px 0px 3px 3px;
+background-color: #0C0FC6;
+color: #d7ebe9;
+}
+#nav ul li a:hover, #nav ul li a:active {
+font-size: 15pt;
+font-weight: bold;
+display: block;
+padding: 3px 0px 3px 3px;
+background-color: #2DE4CE;
+color: #000000;
+}
+#nav ul ul {
+margin: 0px;
+padding: 0px;
+}
+#nav ul ul li {
+border-bottom: none;
+}
+a {
+color: #ffa500;
+}
+a:link {
+color: #ffa500;
+}
+a:visited {
+color: #15ccc7;
+}
+a:hover {
+color: #52f471;
+}
+#footer {
+position: fixed;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background-color: #727272;
+text-align: center;
+font-size: 12pt;				
+}
+</style>
+<script type="text/javascript">
+var $c =0;
+function next(){
+    var boxes = document.getElementsByClassName("box");
+    $c +=1;
+    if($c >= boxes.length) $c = 0;
+    for (var $i=0;$i<boxes.length;$i++){
+        boxes[$i].style.display  = "none";
+    }
+    boxes[$c].style.display  = "block";
+    return false;
+}
+function prev(){
+    var boxes = document.getElementsByClassName("box");
+    $c -=1;
+    if($c < 0) $c = (boxes.length-1);   
+    for (var $i=0;$i<boxes.length;$i++){
+        boxes[$i].style.display  = "none";
+    }
+        boxes[$c].style.display  = "block";
+    return false;   
+}
+</script>
+</head>
+
+<body>
+
+<div id="nav">
+<ul>
+<li><a href="Hours 20-21 Project.html">Home</a></li>
+<li><a href="Page 2.html">Page 2</a></li>
+<li><a href="Page 3.html">Page 3</a></li>
+</ul>
+</div>
+
+<h1 align="center"><b>TOP 5 HEROES</b></h1>
+
+
+</br>
+<div id="container">
+<div id="Hero1" class="box"><img src="Green Lantern.png" width="600" height="600" /><p><b>Green Lantern - </b>Green Lantern is the name of a group of superheroes that fight evil with the aid of rings that grant them powers. Hal Jordan, who is one of the Green Lanterns, is one of the co-founders of the Justice League.</p></div>
+<div id="Hero2" class="box"><img src="Captain America.jpg" width="600" height="600" /><p><b>Captain America - </b>Captain America is a man with superhuman strength. He is typically found with his shield, and was previously a soldier. He is also the leader of the Avengers.</p></div>
+<div id="Hero3" class="box"><img src="Flash.png" width="600" height="600" /><p><b>Flash - </b>Flash is a superhuman who has the abilities of superspeed, as well as super reflexes. Another ability is that they can effect the laws of physics, as well as travel time. He is also one of the co-founders of the Justice League.</p></div>
+<div id="Hero4" class="box"><img src="Iron Man.jpg" width="600" height="600" /><p><b>Iron Man - </b>Iron Man is a millionaire engineer, that created a suit thta is able to contol the energy of an arc reactor of his own design. He is also one of the co-founders of the Avengers.</p></div>
+<div id="Hero5" class="box"><img src="Batman.jpg" width="600" height="600" vertical-align="center" /><p><b>Batman - </b>Batman is a millionaire, and after his parents were killed, he trained himself to face evil. He is also one of the co-founders of the Justice League.</p></div>
+</div>
+<center>
+<a href="#" onClick="return prev();">Previous</a>  &nbsp; <a href="#" onClick="return next();">Next</a>
+</center>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div id="footer"><a href="Hours 20-21 Project.html">Home</a> <a href="Page 2.html">Page 2</a> <a href="Page 3.html">Page 3</a></div>
+</body>
+</html>
